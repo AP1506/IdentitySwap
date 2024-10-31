@@ -36,6 +36,11 @@ layout_mode = 2
 size_flags_horizontal = 4
 text = "Join Game"
 
+[node name="ConfigButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Configurations"
+
 [node name="JoinGameMenu" type="ColorRect" parent="."]
 visible = false
 anchors_preset = 15
@@ -185,10 +190,57 @@ size_flags_vertical = 6
 theme = ExtResource("2_kplfk")
 text = "Start Game"
 
+[node name="ConfigMenu" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfigMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton2" type="Button" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("2_kplfk")
+text = "Return to Main Menu"
+
+[node name="Label" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "Configurations
+
+"
+
+[node name="Label2" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "Server IP address: (Default is this machine's)"
+
+[node name="ServerIPEdit" type="LineEdit" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label3" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "
+Server Port: 7000 (If you would like to chanfe it, please rebuild the server and client)"
+
 [connection signal="pressed" from="MainMenu/VBoxContainer/CreateGameButton" to="." method="_on_create_game_button_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/JoinGameButton" to="." method="_on_join_game_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/ConfigButton" to="." method="_on_config_button_pressed"]
 [connection signal="pressed" from="JoinGameMenu/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="text_submitted" from="JoinGameMenu/VBoxContainer/NameEdit" to="." method="_on_name_edit_text_submitted"]
 [connection signal="pressed" from="JoinGameMenu/VBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]
 [connection signal="pressed" from="Lobby/VBoxContainer2/ReturnToMenuButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Lobby/VBoxContainer2/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="ConfigMenu/VBoxContainer/BackButton2" to="." method="_on_back_button_pressed"]

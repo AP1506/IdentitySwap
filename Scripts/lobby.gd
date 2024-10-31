@@ -64,7 +64,7 @@ func _ready():
 
 func join_game(address = ""):
 	if address.is_empty():
-		address = IP.resolve_hostname(str(OS.get_environment("COMPUTERNAME")),1) #Debug
+		address = DEFAULT_SERVER_IP
 	var peer = ENetMultiplayerPeer.new()
 	var error = peer.create_client(address, PORT)
 	if error:

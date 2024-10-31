@@ -14,14 +14,23 @@ extends Node
 @onready var start_game_error_label = $Lobby/VBoxContainer2/ErrorLabel
 @onready var start_game_button = $Lobby/VBoxContainer2/StartGameButton
 
+@onready var config_menu = $ConfigMenu
+@onready var server_ip_edit = $ConfigMenu/VBoxContainer/ServerIPEdit
+
 var creating_game: bool
+var address_to_join : String
 
 func _ready():
 	if OS.has_feature("dedicated_server"):
 		$"/root/Lobby".create_game()
 		print("Created game server")
+		print("The machine's IP address is " + IP.resolve_hostname(str(OS.get_environment("COMPUTERNAME")),1))
 	
+	# Connect signals for everyone
 	$"/root/Lobby".game_connect.connect(_on_game_connected)
+	
+	# Default address to join
+	address_to_join = IP.resolve_hostname(str(OS.get_environment("COMPUTERNAME")),1)
 
 func _process(delta):
 	if (lobby.visible == true):
@@ -73,7 +82,7 @@ func _on_confirm_button_pressed():
 		
 		# Try joining the game
 		
-		var error = $"/root/Lobby".join_game()
+		var error = $"/root/Lobby".join_game(address_to_join)
 		
 		if error:
 			confirm_error_label.text = "Error connecting to the server"
@@ -86,7 +95,7 @@ func _on_confirm_button_pressed():
 		$"/root/Lobby".player_info["gameCode"] = code_edit.text
 		
 		# Try joining the game
-		var error = $"/root/Lobby".join_game()
+		var error = $"/root/Lobby".join_game(address_to_join)
 		if error and error is String:
 			confirm_error_label.text = error
 			confirm_error_label.visible = true
@@ -129,6 +138,15 @@ func _on_back_button_pressed():
 	main_menu.visible = true
 	join_game_menu.visible = false
 	lobby.visible = false
+	if config_menu.visible:
+		# Set the ip address to join
+		if server_ip_edit.text:
+			address_to_join = server_ip_edit.text
+		else: # Use the default value, this machine's IP address
+			address_to_join = IP.resolve_hostname(str(OS.get_environment("COMPUTERNAME")),1)
+		
+		config_menu.visible = false
+		$"/root/Lobby"
 	
 	$"/root/Lobby".main_menu_state = $"/root/Lobby".MAIN_MENU_STATE.MAIN_MENU
 
@@ -146,3 +164,7 @@ func _on_start_game_button_pressed():
 
 func _on_name_edit_text_submitted(new_text):
 	_on_confirm_button_pressed()
+
+
+func _on_config_button_pressed():
+	config_menu.visible = true
