@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://64va5o4r328x"]
+
+[ext_resource type="Theme" uid="uid://hettanx3suec" path="res://Assets/Themes/generic.tres" id="1_vyrdn"]
+
+[node name="Label" type="Label" groups=["chat_bubbles"]]
+size_flags_horizontal = 0
+theme = ExtResource("1_vyrdn")
+text = "User: Hello this is a message"

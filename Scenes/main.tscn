@@ -1,0 +1,143 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfnei3sp665mu"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_17uxd"]
+[ext_resource type="Theme" uid="uid://hettanx3suec" path="res://Assets/Themes/generic.tres" id="2_1irgh"]
+[ext_resource type="PackedScene" uid="uid://busxfhsq03cut" path="res://Scenes/vote_button.tscn" id="3_2ius8"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_17uxd")
+
+[node name="Chat" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Chat"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Chat/VBoxContainer"]
+layout_mode = 2
+
+[node name="DoneButton" type="Button" parent="Chat/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_1irgh")
+toggle_mode = true
+text = "Done Talking"
+
+[node name="QuestionLabel" type="Label" parent="Chat/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_1irgh")
+text = "The Question is..."
+
+[node name="Scroll" type="ScrollContainer" parent="Chat/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+
+[node name="MessageContainer" type="VBoxContainer" parent="Chat/VBoxContainer/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ChatEdit" type="TextEdit" parent="Chat/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Voting" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Voting"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="Voting/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="Button" parent="Voting/VBoxContainer/GridContainer" instance=ExtResource("3_2ius8")]
+layout_mode = 2
+
+[node name="Button2" parent="Voting/VBoxContainer/GridContainer" instance=ExtResource("3_2ius8")]
+layout_mode = 2
+
+[node name="Button3" parent="Voting/VBoxContainer/GridContainer" instance=ExtResource("3_2ius8")]
+layout_mode = 2
+
+[node name="Button4" parent="Voting/VBoxContainer/GridContainer" instance=ExtResource("3_2ius8")]
+layout_mode = 2
+
+[node name="ResultsLabel" type="Label" parent="Voting/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_1irgh")
+text = "And the results are..."
+
+[node name="ConfirmButton" type="Button" parent="Voting/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Confirm"
+
+[node name="TimerLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme = ExtResource("2_1irgh")
+text = "Time Remaining"
+
+[node name="Panel" type="BoxContainer" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel"]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("2_1irgh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/PanelContainer"]
+layout_mode = 2
+
+[node name="PanelInfoLabel" type="Label" parent="Panel/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme = ExtResource("2_1irgh")
+text = "Information"
+horizontal_alignment = 1
+
+[node name="PanelConfirmButton" type="Button" parent="Panel/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Confirm"
+
+[connection signal="toggled" from="Chat/VBoxContainer/HBoxContainer/DoneButton" to="." method="_on_done_button_pressed"]
+[connection signal="gui_input" from="Chat/VBoxContainer/ChatEdit" to="." method="_on_chat_edit_gui_input"]
+[connection signal="pressed" from="Voting/VBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="Panel/PanelContainer/VBoxContainer/PanelConfirmButton" to="." method="_on_panel_confirm_button_pressed"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://busxfhsq03cut"]
+
+[ext_resource type="Theme" uid="uid://hettanx3suec" path="res://Assets/Themes/generic.tres" id="1_66peq"]
+[ext_resource type="Script" path="res://Scenes/vote_button.gd" id="1_th1fo"]
+
+[node name="Button" type="Button" groups=["vote_button"]]
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme = ExtResource("1_66peq")
+toggle_mode = true
+text = "Hello please vote for me"
+script = ExtResource("1_th1fo")
+
+[connection signal="toggled" from="." to="." method="_toggled"]
