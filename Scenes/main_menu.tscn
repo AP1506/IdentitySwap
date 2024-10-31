@@ -228,6 +228,7 @@ text = "Server IP address: (Default is this machine's)"
 [node name="ServerIPEdit" type="LineEdit" parent="ConfigMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+expand_to_text_length = true
 
 [node name="Label3" type="Label" parent="ConfigMenu/VBoxContainer"]
 layout_mode = 2

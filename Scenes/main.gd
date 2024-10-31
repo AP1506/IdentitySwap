@@ -361,6 +361,12 @@ func to_chatting_stage(round):
 	# Reset the done talking button
 	done_button.set_pressed_no_signal(false)
 	
+	# Disable the done talking button if dead
+	if player_alive:
+		done_button.disabled = false
+	else:
+		done_button.disabled = true
+	
 	chat_rect.visible = true
 	voting_rect.visible = false
 	
