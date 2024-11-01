@@ -1,15 +1,729 @@
-What’s your favorite place on earth?
-What’s one place you’ve visited that you never want to return to?
-What’s the best show on TV right now?
-If you could only eat one food for the rest of your life, what would it be?
-What’s the worst movie you ever saw?
-What’s the best thing you’ve read in the last five years?
-If you could only bring three things with you on a deserted island, what would you pick?
-What’s your biggest pet peeve?
-What is your favorite movie of all time?
-What is the best concert you have ever been to?
-What’s the worst date you’ve ever been on?
-Would you rather be hot or cold?
-What’s your favorite karaoke song?
-What was the best meal you ever ate?
-What’s your least favorite genre of music?
+What’s the most interesting thing you have learned recently?
+What’s your favorite childhood memory?
+What’s something you are passionate about that not many people know?
+Who is the one person who knows you the best?
+Are you better at talking or listening?
+What type of music do you prefer?
+What is your favorite number?
+Where do you see yourself in five years?
+What is your favorite season, and why?
+What are your hobbies, and how do you pursue them?
+What breakfast cereal do you prefer?
+What was your first job?
+Which year was your favorite birthday?
+What was the best vacation you ever had?
+What is your favorite boy band?
+What is that one thing you will never do again?
+Did you have any pets growing up?
+What was the last thing you read?
+Which is your favorite restaurant for dates?
+How many languages do you know?
+Have you ever been to a family reunion?
+If you had to describe yourself as an animal, which animal would it be?
+What is your favorite family holiday tradition?
+In which place would you be happiest to live?
+What is the next place on your travel bucket list?
+Which is your favorite coffee?
+How was your first crush?
+What is the funniest thing your inner child wants to do?
+What is your favorite way to spend a day off?
+What is your favorite flower?
+What do you do to keep yourself fit?
+Do you have a favorite holiday destination?
+Who was your favorite superhero as a kid?
+Which celebrity would you like to meet at a Starbucks and why?
+If your life were a movie, what scene would you watch again and again?
+Which position do you like to sleep in?
+What is your favorite outdoor game?
+If you had a warning label, what would it say?
+Which movie always makes you sad, and which one makes you happy?
+What’s that one thing that can instantly make your day?
+Who are your favorite athletes?
+Are you related or distantly related to anyone famous?
+What are your thoughts on scary movies?
+Are you into podcasts?
+Do you watch romantic movies?
+Which is your all-time favorite comedy movie?
+How do you spend your free time?
+Do you enjoy your parents’ company?
+If you were the ruler of your country, what would be the first law you would make?
+What embarrassing moment has stuck with you over the past few years?
+Do you like going to the movies or prefer watching from the comfort of your home?
+What is your favorite ride?
+Have you ever received a surprise party?
+What would you like to have as your last meal?
+What is your go-to guilty pleasure?
+Who is your favorite actor?
+What song best sums you up?
+Does social media make you feel better or worse?
+Would you go to the beach or mountains in the summer?
+What is your favorite place for shopping?
+What is the best decision you have ever made in life?
+What was the last TV show you binge-watched on Netflix?
+What was your favorite book when you were a kid?
+Are you an introvert or an extrovert?
+Which traits of your parents do you hope to get?
+What is your favorite quote from movies or books?
+Are you a pet lover?
+Which is your favorite day of the week?
+What is your biggest fear?
+What instantly calms you down?
+What is your favorite car?
+What is your proudest achievement?
+What music affects your mood?
+Would you cook or dine?
+What is your favorite ice cream flavor?
+What did you want to be when you were a kid?
+Who do you look up to the most?
+How would you like to spend your birthday?
+What was the last thing you read?
+Which is your favorite restaurant for dates?
+How many languages do you know?
+Have you ever been to a family reunion?
+If you had to describe yourself as an animal, which animal would it be?
+What is your favorite family holiday tradition?
+In which place would you be happiest to live?
+What is the next place on your travel bucket list?
+Which is your favorite coffee?
+How was your first crush?
+What is the funniest thing your inner child wants to do?
+What is your favorite way to spend a day off?
+What is your favorite flower?
+What do you do to keep yourself fit?
+Do you have a favorite holiday destination?
+Who was your favorite superhero as a kid?
+Which celebrity would you like to meet at a Starbucks and why?
+If your life were a movie, what scene would you watch again and again?
+Which position do you like to sleep in?
+What is your favorite outdoor game?
+If you had a warning label, what would it say?
+Which movie always makes you sad, and which one makes you happy?
+What’s that one thing that can instantly make your day?
+Who are your favorite athletes?
+Are you related or distantly related to anyone famous?
+What are your thoughts on scary movies?
+Are you into podcasts?
+Do you watch romantic movies?
+Which is your all-time favorite comedy movie?
+How do you spend your free time?
+Do you enjoy your parents’ company?
+If you were the ruler of your country, what would be the first law you would make?
+What embarrassing moment has stuck with you over the past few years?
+Do you like going to the movies or prefer watching from the comfort of your home?
+What is your favorite ride?
+Have you ever received a surprise party?
+What would you like to have as your last meal?
+What is your go-to guilty pleasure?
+Who is your favorite actor?
+What song best sums you up?
+Does social media make you feel better or worse?
+Would you go to the beach or mountains in the summer?
+What is your favorite place for shopping?
+What is the best decision you have ever made in life?
+What was the last TV show you binge-watched on Netflix?
+What was your favorite book when you were a kid?
+Are you an introvert or an extrovert?
+Which traits of your parents do you hope to get?
+What is your favorite quote from movies or books?
+Are you a pet lover?
+Which is your favorite day of the week?
+What is your biggest fear?
+What instantly calms you down?
+What is your favorite car?
+What is your proudest achievement?
+What music affects your mood?
+Would you cook or dine?
+What is your favorite ice cream flavor?
+What did you want to be when you were a kid?
+Who do you look up to the most?
+How would you like to spend your birthday?
+Would you take a trip to outer space?
+How old were you when you started your first job?
+What is the funniest name you’ve heard of a pet?
+How would you describe yourself?
+What is your all-time favorite drink?
+What is the weirdest thing you have done?
+Do you often visit restaurants?
+Where are you expected to be found at a party?
+If you could magically learn one language, what would you choose?
+What is your favorite part of the day at your job?
+If a movie was made about your life, which actor would you like to play your role?
+How many pairs of shoes do you have?
+Are you more of a doer or a thinker?
+Do you go for stability or uncertainty?
+Do you believe in work-life balance?
+What are your retirement plans?
+Are you an outdoor person or an indoor person?
+Do you like monsoons?
+Is peace of mind important to you over everything else?
+What is your take on the superhero movies that have become popular lately?
+Have you ever had a side hustle or considered having one?
+Have you stalked someone on social media?
+If you could go back in time, what year would you go to?
+Do you remember any famous movie quotes?
+Do you consider yourself good at social networking?
+If there were 26 hours in a day, what would you give extra time to?
+Are you into collecting anything?
+How do you separate your work from your personal life?
+What things could you not go a day without?
+If you were forced to get a tattoo, what would it be?
+Who would you want to be stranded with on an island?
+What is the worst gift you have received?
+What is the most special gift you have received?
+What would you do if you won the lottery?
+Do you believe in horoscope reading?
+Are you looking forward to retiring?
+Do you plan to work forever?
+What’s the longest you’ve not slept?
+What do you use, iPhone or Android?
+Do you have a favorite work buddy?
+Which public transport do you use?
+Do you like cheesy movies?
+When did you start your current job?
+What surprises do you like the most?
+What energizes you about your job?
+What are your favorite topics to speak on?
+If you could share a meal with an individual, living or dead, who would it be?
+Do you like watching TV or streaming videos?
+What’s your latest memory?
+How many pillows do you use while sleeping?
+Do you fantasize about anything?
+What does your family think of your job?
+If you could travel today, where would you go?
+Who is your favorite superhero?
+What’s the tallest building you’ve seen?
+Do you care about the type of media you pay attention to?
+How much time do you spend with your family in a week?
+Do you want a family of your own someday?
+Do you believe in friendship?
+If you could change one thing from the past, what would it be?
+What extracurriculars were you into back in school?
+What’s your favorite type of pizza?
+Do you prefer coffee or ice cream on a date?
+What kind of toys did you like as a kid?
+How do you define your family?
+Do you believe in the existence of aliens?
+Have you ever had any secret admirers?
+Have you ever successfully given up any bad habit?
+Who are you the closest to in your life?
+How long can you live without checking your phone?
+Are you a clean person or a messy one?
+Do you ever wish that you were raised differently?
+What kitchen appliances do you use daily?
+Would you call yourself a mindful man?
+Who in your family would you describe as one of the “characters”?
+If animals could talk, which would have been the rudest?
+Tell me, is your glass half-full or half-empty?
+What drink do you hate?
+Do you like sweets?
+How do you deal with arguments between your family members?
+What would be the worst name you could give to your child?
+What’s your favorite fast food outlet?
+What’s the biggest personality change you’ve seen in yourself?
+What’s more important for you, family or friends?
+Who do you know reminds you of a fictional character?
+What’s the craziest thing you’ve done for the sake of love?
+Do you think death comes easy?
+Has your family ever pressured you to act in a certain way?
+What would be your strategy for an apocalypse?
+232. Do you like roller coasters?
+Would you steal or beg for food if you were homeless and working was not an option for you?
+Did you get to meet your great-grandparents?
+If you could put wings on any animal, which animal would you choose?
+What’s your favorite ethnic cuisine?
+What do you think about romanticizing crime?
+What makes you proud of your family members?
+If you could erase one thing from existence, what would it be?
+What was your favorite subject back in school?
+What’s the best birthday gift you ever received?
+What always brings your family together?
+What cartoon world do you wish you could live in forever?
+What’s your favorite family recipe?
+What do you think of watching romantic comedies?
+What’s a relationship deal-breaker according to you?
+What is success to you?
+What do you think you would be if you were reincarnated as an animal based on your personality?
+Is there anything you wished would come back into vogue?
+Which of your personality traits is your family proud of?
+If you had to be haunted by a ghost but could choose which dead person the ghost would be, who would you go for?
+What’s your family like?
+Would you prefer a son or a daughter, or both?
+Who do you admire most in the world?
+Do you believe in ‘love at first sight’?
+If you had to get a tail, what tail would you get, and what would you do with it?
+What’s something that not many people know about your personality?
+What makes a man a man?
+How can someone gain your trust?
+What makes you extremely happy?
+What makes you smile every day?
+Do you think you’d be a great parent?
+How can someone betray your trust?
+When are you going to settle?
+What is your favorite show on Netflix?
+What would you do if your kid came home drunk?
+Have you ever lost a friend?
+Are you still single?
+What do you think has been the best movie of the year?
+What was your last travel destination?
+Are you on a diet?
+Do you prefer your milk hot or cold?
+Do you pray daily?
+Do you eat chocolates?
+Do you go clubbing?
+Do you like working on weekends?
+How many kids do you want?
+Do you have any siblings?
+Which place do you someday want to live in?
+Do you believe in a live-in relationship?
+Do you like hair colors?
+Where do you shop for groceries?
+What do you prefer, fame or money?
+Where were you employed before?
+Are you planning to expand your business?
+Do you like late-night parties?
+Do you believe in gossip?
+Do you have a boyfriend?
+Who is your best friend?
+Do you know how to drive?
+Which car do you drive?
+Do you like soft toys?
+If your three wishes could be granted, what would they be?
+Do you want to be successful?
+Have you ever faced struggles?
+Do you believe in shortcuts in life?
+Are you a materialistic person?
+What are your job timings?
+Do you get the weekend off?
+When is your birthday?
+What do you wish for your parents?
+Where are you planning to trek this year?
+Do you like sandwiches or burgers?
+Do you like to have iced tea?
+How well do you know this place we’re in?
+Do you go to church on Sundays?
+Do you read magazines?
+Do you like to participate in a potluck?
+Where did you learn baking from?
+How do you bake cookies at home?
+Where do you leave the kids when at work?
+Which schools are you trying to get your kids admitted in?
+Would you prefer to take a stroll or sit?
+Where were you placed earlier?
+How long are you holidaying?
+Which is your favorite beach?
+Are you a tea or coffee person?
+You don’t look your age. Has anyone said this before?
+When would you like to join us for dinner?
+Have you ever gone camping?
+Have you ever traveled solo?
+Where did you do your schooling from?
+Have you ever been in a fight?
+What’s the scariest thing you’ve ever done?
+Which song would make you dance to at any moment?
+How old were you when you first felt for a man?
+What would you think if a guy spent more time on his looks than you?
+If you could only teach one thing to your child, what would it be?
+What have you been up to since I saw you last time?
+Did you ever cheat in exams?
+Do you believe in astrology?
+What’s the best pickup line you can come up with?
+What’s the weirdest thing you’ve seen on Facebook?
+If you lived in a film universe, which one would you pick?
+Do you believe in giving second chances?
+Will you share your bank password with your partner?
+How can you tell when someone is lying to you?
+When was the last time you met your best friend?
+Where are your parents staying?
+Who takes care of your young siblings?
+Do you call your parents to tell them that you will get home late from work?
+Have you ever lied to your family?
+Have you ever lied to your partner?
+Do you think your kids lie?
+Do you think working from home is a better option after having a kid?
+Do you think social skills classes are beneficial?
+Which skin care regimen do you follow?
+Do you believe in home remedies?
+How many times do you pray in a day?
+Do you think time is money?
+What is the best way to make someone understand anything?
+Do you leave your kids in daycare?
+When was the last time you ate out, where did you go, and did you like it?
+Where did you get your black dress from?
+Do you like to wear traditional dresses?
+Do you think moral science classes are essential in schools?
+Have you ever had a nervous breakdown?
+How do your kids travel to school?
+Which summer camp are your kids going to?
+Do you like to set boundaries in relationships?
+Do you think sending your kids to their grandparents’ place every week is important?
+Do you have a quote that reminds you to keep going every day?
+Describe your perfect day- a fun day outdoors or a cozy day in your pajamas.
+Do you have any weird skills that no one knows about?
+If you were to face a difficult situation, how do you prepare yourself to get through it?
+What was the most special and fun adventure you have been on?
+Are you a fan of K-dramas? If so, which one is your favorite?
+What are some of the qualities that you admire in people?
+What is that one quality of your parents that you wish you had?
+Have you ever been to a concert? If so, which one was your favorite?
+What was it like growing up as the youngest/oldest/middle/only child?
+Do you have a family tradition that you follow every year?
+Did you ever wish you had more siblings? Why?
+What do you believe is your love language?
+Are you named after anyone in your family?
+What was the most fun thing you did growing up with your parents?
+Would you go back in time to meet your ancestors, or go to the future to meet your descendants?
+What are the values that you believe are necessary to make a relationship work?
+What is your biggest irrational fear?
+Would you describe yourself as an optimist, pessimist or realist?
+How would you define beauty?
+If you were reincarnated as a famous person, what is the first thing you would do?
+If you become invisible for a day, what would you do?
+What is your favorite conspiracy?
+What is your game plan to survive a zombie apocalypse?
+Do you believe in ghosts? Do they scare you?
+Is there anything holding you back from living your life to the fullest?
+Do you have a moment in your life that you wish to relive again?
+If today was the last day on this planet, how would you spend it?
+If you had access to a lot of money to start your dream business, what would it be?
+What 3 qualities, according to you, make a person trustworthy?
+Who is your favorite director and what is it about their work that you admire?
+What movie would you recommend that you believe everyone should watch at least once?
+Is there an offbeat language that you wish to learn and why?
+Do people think you are scary?
+If you get the chance to chat with three famous people in history, who would you choose and why?
+If I ask you to describe your life in a song, which one would you pick?
+Did you ever get asked out on a date in a funny way?
+Since everyone knows a Taylor Swift song, which one do you like the most and why?
+Do you want to pick up any other hobbies? If yes, what would it be?
+Did you experience something this month that inspired you?
+Where are you planning to trek this year?
+Do you like sandwiches or burgers?
+Do you like to have iced tea?
+How well do you know this place we’re in?
+Do you go to church on Sundays?
+Do you read magazines?
+Do you like to participate in a potluck?
+Where did you learn baking from?
+How do you bake cookies at home?
+Where do you leave the kids when at work?
+Which schools are you trying to get your kids admitted in?
+Would you prefer to take a stroll or sit?
+Where were you placed earlier?
+How long are you holidaying?
+Which is your favorite beach?
+Are you a tea or coffee person?
+You don’t look your age. Has anyone said this before?
+When would you like to join us for dinner?
+Have you ever gone camping?
+Have you ever traveled solo?
+Where did you do your schooling from?
+Have you ever been in a fight?
+What’s the scariest thing you’ve ever done?
+Which song would make you dance to at any moment?
+How old were you when you first felt for a man?
+What would you think if a guy spent more time on his looks than you?
+If you could only teach one thing to your child, what would it be?
+What have you been up to since I saw you last time?
+Did you ever cheat in exams?
+Do you believe in astrology?
+What’s the best pickup line you can come up with?
+What’s the weirdest thing you’ve seen on Facebook?
+If you lived in a film universe, which one would you pick?
+Do you believe in giving second chances?
+Will you share your bank password with your partner?
+How can you tell when someone is lying to you?
+When was the last time you met your best friend?
+Where are your parents staying?
+Who takes care of your young siblings?
+Do you call your parents to tell them that you will get home late from work?
+Have you ever lied to your family?
+Have you ever lied to your partner?
+Do you think your kids lie?
+Do you think working from home is a better option after having a kid?
+Do you think social skills classes are beneficial?
+Which skin care regimen do you follow?
+Do you believe in home remedies?
+How many times do you pray in a day?
+Do you think time is money?
+What is the best way to make someone understand anything?
+Do you leave your kids in daycare?
+When was the last time you ate out, where did you go, and did you like it?
+Where did you get your black dress from?
+Do you like to wear traditional dresses?
+Do you think moral science classes are essential in schools?
+Have you ever had a nervous breakdown?
+How do your kids travel to school?
+Which summer camp are your kids going to?
+Do you like to set boundaries in relationships?
+Do you think sending your kids to their grandparents’ place every week is important?
+Do you have a quote that reminds you to keep going every day?
+Describe your perfect day- a fun day outdoors or a cozy day in your pajamas.
+Do you have any weird skills that no one knows about?
+If you were to face a difficult situation, how do you prepare yourself to get through it?
+What was the most special and fun adventure you have been on?
+Are you a fan of K-dramas? If so, which one is your favorite?
+What are some of the qualities that you admire in people?
+What is that one quality of your parents that you wish you had?
+Have you ever been to a concert? If so, which one was your favorite?
+What was it like growing up as the youngest/oldest/middle/only child?
+Do you have a family tradition that you follow every year?
+Did you ever wish you had more siblings? Why?
+What do you believe is your love language?
+Are you named after anyone in your family?
+What was the most fun thing you did growing up with your parents?
+Would you go back in time to meet your ancestors, or go to the future to meet your descendants?
+What are the values that you believe are necessary to make a relationship work?
+What is your biggest irrational fear?
+Would you describe yourself as an optimist, pessimist or realist?
+How would you define beauty?
+If you were reincarnated as a famous person, what is the first thing you would do?
+If you become invisible for a day, what would you do?
+What is your favorite conspiracy?
+What is your game plan to survive a zombie apocalypse?
+Do you believe in ghosts? Do they scare you?
+Is there anything holding you back from living your life to the fullest?
+Do you have a moment in your life that you wish to relive again?
+If today was the last day on this planet, how would you spend it?
+If you had access to a lot of money to start your dream business, what would it be?
+What 3 qualities, according to you, make a person trustworthy?
+Who is your favorite director and what is it about their work that you admire?
+What movie would you recommend that you believe everyone should watch at least once?
+Is there an offbeat language that you wish to learn and why?
+Do people think you are scary?
+If you get the chance to chat with three famous people in history, who would you choose and why?
+If I ask you to describe your life in a song, which one would you pick?
+Did you ever get asked out on a date in a funny way?
+Since everyone knows a Taylor Swift song, which one do you like the most and why?
+Do you want to pick up any other hobbies? If yes, what would it be?
+Did you experience something this month that inspired you?
+Where are you planning to trek this year?
+Do you like sandwiches or burgers?
+Do you like to have iced tea?
+How well do you know this place we’re in?
+Do you go to church on Sundays?
+Do you read magazines?
+Do you like to participate in a potluck?
+Where did you learn baking from?
+How do you bake cookies at home?
+Where do you leave the kids when at work?
+Which schools are you trying to get your kids admitted in?
+Would you prefer to take a stroll or sit?
+Where were you placed earlier?
+How long are you holidaying?
+Which is your favorite beach?
+Are you a tea or coffee person?
+You don’t look your age. Has anyone said this before?
+When would you like to join us for dinner?
+Have you ever gone camping?
+Have you ever traveled solo?
+Where did you do your schooling from?
+Have you ever been in a fight?
+What’s the scariest thing you’ve ever done?
+Which song would make you dance to at any moment?
+How old were you when you first felt for a man?
+What would you think if a guy spent more time on his looks than you?
+If you could only teach one thing to your child, what would it be?
+What have you been up to since I saw you last time?
+Did you ever cheat in exams?
+Do you believe in astrology?
+What’s the best pickup line you can come up with?
+What’s the weirdest thing you’ve seen on Facebook?
+If you lived in a film universe, which one would you pick?
+Do you believe in giving second chances?
+Will you share your bank password with your partner?
+How can you tell when someone is lying to you?
+When was the last time you met your best friend?
+Where are your parents staying?
+Who takes care of your young siblings?
+Do you call your parents to tell them that you will get home late from work?
+Have you ever lied to your family?
+Have you ever lied to your partner?
+Do you think your kids lie?
+Do you think working from home is a better option after having a kid?
+Do you think social skills classes are beneficial?
+Which skin care regimen do you follow?
+Do you believe in home remedies?
+How many times do you pray in a day?
+Do you think time is money?
+What is the best way to make someone understand anything?
+Do you leave your kids in daycare?
+When was the last time you ate out, where did you go, and did you like it?
+Where did you get your black dress from?
+Do you like to wear traditional dresses?
+Do you think moral science classes are essential in schools?
+Have you ever had a nervous breakdown?
+How do your kids travel to school?
+Which summer camp are your kids going to?
+Do you like to set boundaries in relationships?
+Do you think sending your kids to their grandparents’ place every week is important?
+Do you have a quote that reminds you to keep going every day?
+Describe your perfect day- a fun day outdoors or a cozy day in your pajamas.
+Do you have any weird skills that no one knows about?
+If you were to face a difficult situation, how do you prepare yourself to get through it?
+What was the most special and fun adventure you have been on?
+Are you a fan of K-dramas? If so, which one is your favorite?
+What are some of the qualities that you admire in people?
+What is that one quality of your parents that you wish you had?
+Have you ever been to a concert? If so, which one was your favorite?
+What was it like growing up as the youngest/oldest/middle/only child?
+Do you have a family tradition that you follow every year?
+Did you ever wish you had more siblings? Why?
+What do you believe is your love language?
+Are you named after anyone in your family?
+What was the most fun thing you did growing up with your parents?
+Would you go back in time to meet your ancestors, or go to the future to meet your descendants?
+What are the values that you believe are necessary to make a relationship work?
+What is your biggest irrational fear?
+Would you describe yourself as an optimist, pessimist or realist?
+How would you define beauty?
+If you were reincarnated as a famous person, what is the first thing you would do?
+If you become invisible for a day, what would you do?
+What is your favorite conspiracy?
+What is your game plan to survive a zombie apocalypse?
+Do you believe in ghosts? Do they scare you?
+Is there anything holding you back from living your life to the fullest?
+Do you have a moment in your life that you wish to relive again?
+If today was the last day on this planet, how would you spend it?
+If you had access to a lot of money to start your dream business, what would it be?
+What 3 qualities, according to you, make a person trustworthy?
+Who is your favorite director and what is it about their work that you admire?
+What movie would you recommend that you believe everyone should watch at least once?
+Is there an offbeat language that you wish to learn and why?
+Do people think you are scary?
+If you get the chance to chat with three famous people in history, who would you choose and why?
+If I ask you to describe your life in a song, which one would you pick?
+Did you ever get asked out on a date in a funny way?
+Since everyone knows a Taylor Swift song, which one do you like the most and why?
+Do you want to pick up any other hobbies? If yes, what would it be?
+Did you experience something this month that inspired you?
+Where are you planning to trek this year?
+Do you like sandwiches or burgers?
+Do you like to have iced tea?
+How well do you know this place we’re in?
+Do you go to church on Sundays?
+Do you read magazines?
+Do you like to participate in a potluck?
+Where did you learn baking from?
+How do you bake cookies at home?
+Where do you leave the kids when at work?
+Which schools are you trying to get your kids admitted in?
+Would you prefer to take a stroll or sit?
+Where were you placed earlier?
+How long are you holidaying?
+Which is your favorite beach?
+Are you a tea or coffee person?
+You don’t look your age. Has anyone said this before?
+When would you like to join us for dinner?
+Have you ever gone camping?
+Have you ever traveled solo?
+Where did you do your schooling from?
+Have you ever been in a fight?
+What’s the scariest thing you’ve ever done?
+Which song would make you dance to at any moment?
+How old were you when you first felt for a man?
+What would you think if a guy spent more time on his looks than you?
+If you could only teach one thing to your child, what would it be?
+What have you been up to since I saw you last time?
+Did you ever cheat in exams?
+Do you believe in astrology?
+What’s the best pickup line you can come up with?
+What’s the weirdest thing you’ve seen on Facebook?
+If you lived in a film universe, which one would you pick?
+Do you believe in giving second chances?
+Will you share your bank password with your partner?
+How can you tell when someone is lying to you?
+When was the last time you met your best friend?
+Where are your parents staying?
+Who takes care of your young siblings?
+Do you call your parents to tell them that you will get home late from work?
+Have you ever lied to your family?
+Have you ever lied to your partner?
+Do you think your kids lie?
+Do you think working from home is a better option after having a kid?
+Do you think social skills classes are beneficial?
+Which skin care regimen do you follow?
+Do you believe in home remedies?
+How many times do you pray in a day?
+Do you think time is money?
+What is the best way to make someone understand anything?
+Do you leave your kids in daycare?
+When was the last time you ate out, where did you go, and did you like it?
+Where did you get your black dress from?
+Do you like to wear traditional dresses?
+Do you think moral science classes are essential in schools?
+Have you ever had a nervous breakdown?
+How do your kids travel to school?
+Which summer camp are your kids going to?
+Do you like to set boundaries in relationships?
+Do you think sending your kids to their grandparents’ place every week is important?
+Do you have a quote that reminds you to keep going every day?
+Describe your perfect day- a fun day outdoors or a cozy day in your pajamas.
+Do you have any weird skills that no one knows about?
+If you were to face a difficult situation, how do you prepare yourself to get through it?
+What was the most special and fun adventure you have been on?
+Are you a fan of K-dramas? If so, which one is your favorite?
+What are some of the qualities that you admire in people?
+What is that one quality of your parents that you wish you had?
+Have you ever been to a concert? If so, which one was your favorite?
+What was it like growing up as the youngest/oldest/middle/only child?
+Do you have a family tradition that you follow every year?
+Did you ever wish you had more siblings? Why?
+What do you believe is your love language?
+Are you named after anyone in your family?
+What was the most fun thing you did growing up with your parents?
+Would you go back in time to meet your ancestors, or go to the future to meet your descendants?
+What are the values that you believe are necessary to make a relationship work?
+What is your biggest irrational fear?
+Would you describe yourself as an optimist, pessimist or realist?
+How would you define beauty?
+If you were reincarnated as a famous person, what is the first thing you would do?
+If you become invisible for a day, what would you do?
+What is your favorite conspiracy?
+What is your game plan to survive a zombie apocalypse?
+Do you believe in ghosts? Do they scare you?
+Is there anything holding you back from living your life to the fullest?
+Do you have a moment in your life that you wish to relive again?
+If today was the last day on this planet, how would you spend it?
+If you had access to a lot of money to start your dream business, what would it be?
+What 3 qualities, according to you, make a person trustworthy?
+Who is your favorite director and what is it about their work that you admire?
+What movie would you recommend that you believe everyone should watch at least once?
+Is there an offbeat language that you wish to learn and why?
+Do people think you are scary?
+If you get the chance to chat with three famous people in history, who would you choose and why?
+If I ask you to describe your life in a song, which one would you pick?
+Did you ever get asked out on a date in a funny way?
+Since everyone knows a Taylor Swift song, which one do you like the most and why?
+Do you want to pick up any other hobbies? If yes, what would it be?
+Did you experience something this month that inspired you?
+What instrument, according to you, makes a funny sound?
+What is that one weird smell that you love?’
+What is the worst color, according to you?
+What is the weirdest text you have ever received?
+How many times have you broken someone’s heart?
+How many times have you had your heart broken?
+Can you share the story of how your parents met?
+If you can steal anything in this world, what will it be?
+Who do you believe poses the greatest challenge to you and your goals?
+What TV advertisement that you saw recently made no sense to you?
+What is your favorite video game, Call of Duty or Diablo?
+What is that one food item you will never share with anyone?
+What is the best name that you can think of for a cat?
+Do you ever count how many steps you take out of boredom?
+Have you ever gotten a tattoo while you were drunk?
+Do you ever want to get a piercing?
+What is your take on belly button piercings?
+If you were to choose between a penguin or a toucan, what would you choose?
+What is the one song that reminds you of a favorite memory?
+Who is your favorite YouTuber?
+What is your favorite Tom Cruise movie?
+Which one was funnier – Rush Hour or Shanghai Nights?
+What is a superstition that you still believe in?
+If you could talk to animals, what is the first thing you’d ask your pet?
+Would you rather go for a spa day or take a long bath?
+Would you call yourself a jealous person?
+Are you good at Monopoly?
+What is the best compliment that you have ever received?
+Have you ever written a journal or wished to take up journaling?
+Did you ever believe in the Tooth Fairy or Santa Claus as a kid?
+What is a virtue people hold in high regard that you think is overrated?

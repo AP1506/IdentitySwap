@@ -5,4 +5,5 @@
 [node name="Label" type="Label" groups=["chat_bubbles"]]
 size_flags_horizontal = 0
 theme = ExtResource("1_vyrdn")
+theme_type_variation = &"ChatBubble"
 text = "User: Hello this is a message"

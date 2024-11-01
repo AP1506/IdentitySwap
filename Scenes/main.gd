@@ -17,9 +17,9 @@ extends Node
 
 @onready var time_label = $TimerLabel
 
-const MAX_QUESTIONS = 15
-const CHATTING_PERIOD_S = 60
-const VOTING_PERIOD_S = 60
+const MAX_QUESTIONS = 729
+const CHATTING_PERIOD_S = 60 * 7
+const VOTING_PERIOD_S = 60 * 3
 
 var timer = 0:
 	set(value):

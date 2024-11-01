@@ -51,6 +51,7 @@ size_flags_vertical = 3
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("2_1irgh")
 
 [node name="Voting" type="ColorRect" parent="."]
 visible = false
@@ -94,6 +95,7 @@ text = "And the results are..."
 [node name="ConfirmButton" type="Button" parent="Voting/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("2_1irgh")
 text = "Confirm"
 
 [node name="TimerLabel" type="Label" parent="."]
