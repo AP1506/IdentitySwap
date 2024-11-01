@@ -73,6 +73,12 @@ func join_game(address = ""):
 	
 	return 0
 
+@rpc("any_peer")
+func send_num_questions_server(num_q : int):
+	NUM_ROUNDS = num_q
+	
+	ack.rpc_id(multiplayer.get_remote_sender_id())
+
 # Any client can request player info from the server at any point
 func request_player_info():
 	send_player_info_server.rpc_id(1)
@@ -244,6 +250,7 @@ func _register_player(new_player_info):
 
 # This is called on everyone
 func _on_player_disconnected(id):
+	print("The player " + players[id]["name"] + " just disconnected")
 	players.erase(id)
 	
 	# Go back to the menu if all players are gone

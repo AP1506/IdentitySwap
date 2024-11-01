@@ -172,6 +172,13 @@ theme = ExtResource("2_kplfk")
 text = "Number of Questions"
 horizontal_alignment = 1
 
+[node name="QuestionsEdit" type="LineEdit" parent="Lobby/VBoxContainer2/HBoxContainer/Customizer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme = ExtResource("2_kplfk")
+text = "3"
+expand_to_text_length = true
+
 [node name="GameCodeLabel" type="Label" parent="Lobby/VBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4

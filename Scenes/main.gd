@@ -1,4 +1,4 @@
-extends Node
+class_name Main extends Node
 
 @onready var chat_rect = $Chat
 @onready var question_label = $Chat/VBoxContainer/HBoxContainer/QuestionLabel
@@ -36,6 +36,18 @@ var player_alive = true
 var prev_state
 
 func _ready():
+	# Stuff that needs to be done before process
+	$"/root/Lobby".game_state = $"/root/Lobby".GAME_STATE.CHATTING
+	prev_state = $"/root/Lobby".game_state
+	
+	$"/root/Lobby".chat_messages = []
+	$"/root/Lobby".players_stop_talking = {}
+	$"/root/Lobby".swapped = []
+	$"/root/Lobby".questions = [""]
+	$"/root/Lobby".round_votes = {}
+	
+	$"/root/Lobby".curr_round = 1
+	
 	if multiplayer.is_server():
 		print("Loaded the main game scene")
 		
@@ -74,13 +86,6 @@ func _ready():
 		if multiplayer.get_unique_id() in $"/root/Lobby".swapped:
 			show_panel_info("Your identity has been swapped with player " + $"/root/Lobby".player_info["name"] + "!")
 	
-	$"/root/Lobby".game_state = $"/root/Lobby".GAME_STATE.CHATTING
-	prev_state = $"/root/Lobby".game_state
-	
-	$"/root/Lobby".chat_messages = []
-	
-	$"/root/Lobby".curr_round = 1
-	
 	# Set up round information
 	start_round()
 	
@@ -93,7 +98,7 @@ func show_panel_info(string : String):
 	panel.visible = true
 
 func generate_questions():
-	var num_questions = $"/root/Lobby".players.keys().size() - 1 #- 2 #Debug for now
+	var num_questions = $"/root/Lobby".NUM_ROUNDS
 	
 	# Get lines from file
 	var lines = FileAccess.open("res://Assets/questions.txt", FileAccess.READ)
@@ -245,21 +250,11 @@ func start_round():
 				# End the game with the swappers winning
 				$"/root/Lobby".game_state = $"/root/Lobby".GAME_STATE.END
 				
-				var results = "The non swappers "
+				var results = "The swappers "
+				results += $"/root/Lobby".players[$"/root/Lobby".swapped[0]]["name"] + " and "
+				results += $"/root/Lobby".players[$"/root/Lobby".swapped[1]]["name"] + " win!"
 				
-				var players = $"/root/Lobby".players.keys()
-				players.erase(1)
-				players.erase($"/root/Lobby".swapped[0])
-				players.erase($"/root/Lobby".swapped[1])
-				
-				results += $"/root/Lobby".players[players[0]]["name"]
-				
-				for i in range(1, players.size() ):
-					results += ", " + $"/root/Lobby".players[players[i]]["name"]
-				
-				results += " win!"
-				
-				to_game_end.rpc(0, results)
+				to_game_end.rpc(1, results)
 				return
 
 @rpc("authority")
@@ -353,7 +348,8 @@ func to_chatting_stage(round):
 	
 	# Set the question based on the round
 	$"/root/Lobby".curr_round = round
-	question_label.text = $"/root/Lobby".questions[$"/root/Lobby".curr_round - 1]
+	question_label.text = "Q" + String.num_int64(round) + "/" + String.num_int64($"/root/Lobby".questions.size()) + ": "
+	question_label.text += $"/root/Lobby".questions[$"/root/Lobby".curr_round - 1]
 	
 	# Reset the timer
 	timer = CHATTING_PERIOD_S
@@ -440,15 +436,24 @@ func _process(delta):
 		# If the player is you, show a visual difference in the bubble
 		if $"/root/Lobby".chat_messages[num_chat_bubbles]["playerId"] == multiplayer.get_unique_id():
 			new_bubble.text = ""
+			new_bubble.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 			new_bubble.size_flags_horizontal = Control.SIZE_SHRINK_END
 		else:
-			new_bubble.text = $"/root/Lobby".players[$"/root/Lobby".chat_messages[num_chat_bubbles]["playerId"]]["name"] + "\n"
+			new_bubble.text = $"/root/Lobby".players[$"/root/Lobby".chat_messages[num_chat_bubbles]["playerId"]]["name"] + ": "
+			new_bubble.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 			new_bubble.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 		
 		new_bubble.text += $"/root/Lobby".chat_messages[num_chat_bubbles]["message"]
 		
+		# Resize so that it doesn't exceed 500px in size
+		if new_bubble.get_minimum_size().x > 500:
+			new_bubble.custom_minimum_size = Vector2(500, 0)
+			new_bubble.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		
+		# Add to screen
 		message_container.add_child(new_bubble)
 		
+		# Must wait until next frame to get the scroll container to scroll to it automatically
 		await get_tree().process_frame
 		
 		scroll.ensure_control_visible(new_bubble)
