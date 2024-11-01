@@ -29,6 +29,7 @@ func _ready():
 		$"/root/Lobby".create_game()
 		print("Created game server")
 		print("The machine's IP address is " + IP.resolve_hostname(str(OS.get_environment("COMPUTERNAME")),1))
+		$"/root/Lobby".scene_state = $"/root/Lobby".SCENE_STATE.MAIN_MENU
 	else:
 		# Reset player info
 		$"/root/Lobby".player_info = {"name": "Server", "gameCode": "GameCode", "creator": false, "alive": true}

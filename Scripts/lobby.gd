@@ -49,10 +49,15 @@ var round_votes = {} # In the format {playerId : numVotes}
 
 enum MAIN_MENU_STATE {MAIN_MENU, JOIN_GAME, CREATE_GAME, LOBBY}
 enum GAME_STATE {CHATTING, VOTING, VOTING_RESULTS, END}
+enum SCENE_STATE {MAIN, MAIN_MENU}
 
+# States
 var main_menu_state : MAIN_MENU_STATE = MAIN_MENU_STATE.MAIN_MENU
-
 var game_state : GAME_STATE = GAME_STATE.CHATTING
+var scene_state : SCENE_STATE
+
+# Return info variables
+var server_status : SCENE_STATE
 
 func _ready():
 	multiplayer.peer_connected.connect(_on_player_connected)
@@ -106,6 +111,16 @@ func send_player_info(players_info):
 	server_request_complete.emit()
 	print("Sending player info")
 	print(players_info)
+
+@rpc("any_peer")
+func ask_server_status():
+	return_server_status.rpc_id(multiplayer.get_remote_sender_id(), scene_state)
+
+@rpc("authority")
+func return_server_status(status):
+	server_status = status
+	
+	server_request_complete.emit()
 
 @rpc("any_peer")
 func set_game_code_server(code : String):
@@ -223,6 +238,8 @@ func load_game(game_scene_path):
 	print("Attempt at loading the game scene")
 	get_tree().change_scene_to_file(game_scene_path)
 
+func load_menu():
+	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 
 # Every peer will call this when they have loaded the game scene.
 @rpc("any_peer", "reliable")
@@ -250,14 +267,14 @@ func _register_player(new_player_info):
 
 # This is called on everyone
 func _on_player_disconnected(id):
-	print("The player " + players[id]["name"] + " just disconnected")
+	print("The player " + (players[id]["name"] if id in players.keys() else "with id " + String.num_int64(id)) + " just disconnected")
 	players.erase(id)
 	
 	# Go back to the menu if all players are gone
 	if players.size() == 1 and multiplayer and multiplayer.is_server():
 		remove_multiplayer_peer()
 		main_menu_state = MAIN_MENU_STATE.MAIN_MENU
-		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+		load_menu()
 		print("Returning to the menu")
 	
 	player_disconnected.emit(id)
@@ -279,6 +296,16 @@ func _on_connected_ok():
 			remove_multiplayer_peer()
 			return
 	
+	# Check the server's status
+	ask_server_status.rpc_id(1)
+	
+	await server_request_complete
+	
+	if server_status != SCENE_STATE.MAIN_MENU:
+		game_connect.emit("Server is in another game")
+		remove_multiplayer_peer()
+		return
+	
 	grab_player_info_server.rpc_id(1, player_info)
 	
 	print("Joined game")
@@ -294,3 +321,5 @@ func _on_server_disconnected():
 	multiplayer.multiplayer_peer = null
 	players.clear()
 	server_disconnected.emit()
+	
+	load_menu()

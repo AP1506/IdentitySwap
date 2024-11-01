@@ -32,10 +32,12 @@ toggle_mode = true
 text = "Done Talking"
 
 [node name="QuestionLabel" type="Label" parent="Chat/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(750, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("2_1irgh")
 text = "The Question is..."
+autowrap_mode = 3
 
 [node name="Scroll" type="ScrollContainer" parent="Chat/VBoxContainer"]
 layout_mode = 2

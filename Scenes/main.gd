@@ -38,6 +38,7 @@ var prev_state
 func _ready():
 	# Stuff that needs to be done before process
 	$"/root/Lobby".game_state = $"/root/Lobby".GAME_STATE.CHATTING
+	$"/root/Lobby".scene_state = $"/root/Lobby".SCENE_STATE.MAIN
 	prev_state = $"/root/Lobby".game_state
 	
 	$"/root/Lobby".chat_messages = []
@@ -411,8 +412,8 @@ func check_factions():
 	var swappers_alive = $"/root/Lobby".swapped.duplicate()
 	swappers_alive = swappers_alive.filter($"/root/Lobby".player_is_alive)
 	
-	# Swappers win if there is only one non swapper left
-	if player_ids_left.size() == 3 and swappers_alive.size() == 2:
+	# Swappers win if there are no non swappers left alive
+	if player_ids_left.size() == 2 and swappers_alive.size() == 2:
 		return 1
 	elif swappers_alive.size() == 0: # All swappers are dead, so non-swappers win
 		return -1
@@ -515,7 +516,7 @@ func _on_panel_confirm_button_pressed():
 		
 		# Go back to the main menu
 		$"/root/Lobby".main_menu_state = $"/root/Lobby".MAIN_MENU_STATE.MAIN_MENU
-		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+		$"/root/Lobby".load_menu()
 	else:
 		# Just hide the panel since it is just used for information
 		panel.visible = false
