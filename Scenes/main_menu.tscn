@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbksoibpooc2j"]
+[gd_scene load_steps=4 format=3 uid="uid://bbksoibpooc2j"]
 
-[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_32x3f"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_32x3f"]
 [ext_resource type="Theme" uid="uid://hettanx3suec" path="res://Assets/Themes/generic.tres" id="2_kplfk"]
+[ext_resource type="Texture2D" uid="uid://c255116bwmpxc" path="res://Assets/Title.png" id="2_meuco"]
 
 [node name="MainMenu" type="Node"]
 script = ExtResource("1_32x3f")
 
 [node name="MainMenu" type="ColorRect" parent="."]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -26,18 +26,28 @@ grow_vertical = 2
 custom_minimum_size = Vector2(1150, 500)
 layout_mode = 2
 size_flags_stretch_ratio = 9.0
+texture = ExtResource("2_meuco")
 
 [node name="CreateGameButton" type="Button" parent="MainMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("2_kplfk")
 text = "Create Game"
 
 [node name="JoinGameButton" type="Button" parent="MainMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("2_kplfk")
 text = "Join Game"
 
+[node name="ConfigButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_kplfk")
+text = "Configurations"
+
 [node name="JoinGameMenu" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -52,6 +62,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="BackButton" type="Button" parent="JoinGameMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme = ExtResource("2_kplfk")
+text = "Return to Main Menu"
+
 [node name="AskNameLabel" type="Label" parent="JoinGameMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 10
@@ -64,6 +81,7 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 2
+theme = ExtResource("2_kplfk")
 
 [node name="AskCodeLabel" type="Label" parent="JoinGameMenu/VBoxContainer"]
 layout_mode = 2
@@ -77,6 +95,7 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 2
+theme = ExtResource("2_kplfk")
 
 [node name="ConfirmButton" type="Button" parent="JoinGameMenu/VBoxContainer"]
 layout_mode = 2
@@ -84,6 +103,14 @@ size_flags_horizontal = 4
 size_flags_vertical = 6
 theme = ExtResource("2_kplfk")
 text = "Confirm"
+
+[node name="ErrorLabel" type="Label" parent="JoinGameMenu/VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("2_kplfk")
+text = "Enter a friend's game code to join a game"
+horizontal_alignment = 1
 
 [node name="Lobby" type="ColorRect" parent="."]
 visible = false
@@ -100,6 +127,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ReturnToMenuButton" type="Button" parent="Lobby/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme = ExtResource("2_kplfk")
+text = "Return to main menu"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Lobby/VBoxContainer2"]
 layout_mode = 2
@@ -135,13 +169,15 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource("2_kplfk")
-text = "Enter a name players can recognize you by:"
+text = "Number of Questions"
 horizontal_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Lobby/VBoxContainer2/HBoxContainer/Customizer"]
-custom_minimum_size = Vector2(100, 0)
+[node name="QuestionsEdit" type="LineEdit" parent="Lobby/VBoxContainer2/HBoxContainer/Customizer"]
 layout_mode = 2
-size_flags_vertical = 2
+size_flags_horizontal = 0
+theme = ExtResource("2_kplfk")
+text = "3"
+expand_to_text_length = true
 
 [node name="GameCodeLabel" type="Label" parent="Lobby/VBoxContainer2"]
 layout_mode = 2
@@ -151,13 +187,75 @@ theme = ExtResource("2_kplfk")
 text = "Game Code: "
 horizontal_alignment = 1
 
+[node name="ErrorLabel" type="Label" parent="Lobby/VBoxContainer2"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme = ExtResource("2_kplfk")
+text = "Error"
+horizontal_alignment = 1
+
 [node name="StartGameButton" type="Button" parent="Lobby/VBoxContainer2"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 theme = ExtResource("2_kplfk")
 text = "Start Game"
 
+[node name="ConfigMenu" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfigMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton2" type="Button" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("2_kplfk")
+text = "Return to Main Menu"
+
+[node name="Label" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "Configurations
+
+"
+
+[node name="Label2" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "Server IP address: (Default is this machine's)"
+
+[node name="ServerIPEdit" type="LineEdit" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+expand_to_text_length = true
+
+[node name="Label3" type="Label" parent="ConfigMenu/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_kplfk")
+text = "
+Server Port: 7000 (If you would like to change it, please rebuild the server and client)"
+
 [connection signal="pressed" from="MainMenu/VBoxContainer/CreateGameButton" to="." method="_on_create_game_button_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/JoinGameButton" to="." method="_on_join_game_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/ConfigButton" to="." method="_on_config_button_pressed"]
+[connection signal="pressed" from="JoinGameMenu/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="text_submitted" from="JoinGameMenu/VBoxContainer/NameEdit" to="." method="_on_name_edit_text_submitted"]
 [connection signal="pressed" from="JoinGameMenu/VBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="Lobby/VBoxContainer2/ReturnToMenuButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Lobby/VBoxContainer2/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="ConfigMenu/VBoxContainer/BackButton2" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dooinogphbis0"]
+
+[ext_resource type="Texture2D" uid="uid://db54esb7uyn2d" path="res://Assets/message_bubbles.png" id="1_v8nwc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hs5ul"]
+texture = ExtResource("1_v8nwc")
+region_rect = Rect2(7.5, 30.5, 512.5, 184)
+
+[resource]
+Label/colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
+Label/styles/normal = SubResource("StyleBoxTexture_hs5ul")
